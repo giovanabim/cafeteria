@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria | Cardápio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="marca">
+            <img src="images/logo.png" alt="Logo da marca: grãos de café">
+            <h4>Cafeteria</h4>
+        </div>
+        <nav>
+            <a href="index.html">Página Inicial</a>
+            <a href="cardapio.html">Cardápio</a>
+            <a href="contatos.html">Contatos</a>
+        </nav>
+    </header>
+    <main>
+        <section class="carrinho">
+            <h2>Carrinho</h2>
+            <button>Limpar</button>
+            <div class="pedido">
+                <div class="campo">
+                    <img src="" alt="" id="imagem">
+                </div>
+                <div class="campo">
+                    <h3 id="nome"></h3>
+                </div>
+                <div class="campo">
+                    <h5>Preço</h5>
+                    <h4 id="preco"></h4>
+                </div>
+                <div class="campo">
+                    <h5>Quantidade</h5>
+                    <input type="number" id="quantidade">
+                </div>
+            </div>
+            <div class="pagamento">
+                <h4>Informe seu CEP</h4>
+                <h3>Total</h3>
+                <input type="text" placeholder="Ex: 14015-040">
+                <div id="total"></div>
+                <button>Procurar</button>
+                <button>Continuar</button>
+            </div>
+        </section>
+        <section class="cardapio">
+            <div class="pesquisa"></div>
+            <div class="item">
+                <div class="campo">
+                  <img src="" alt="">  
+                </div>
+                <div class="campo">
+                    <h3 id="nome"></h3>
+                    <p id="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus reiciendis numquam.</p>
+                </div>
+                <div class="campo">
+                    <h5>Preço</h5>
+                    <h4 id="preco"></h4>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>2025 Cafeteria. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
