@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafeteria | Cardápio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -21,45 +22,60 @@
     <main>
         <section class="carrinho">
             <h2>Carrinho</h2>
-            <button>Limpar</button>
-            <div class="pedido">
-                <div class="campo">
-                    <img src="" alt="" id="imagem">
-                </div>
-                <div class="campo">
-                    <h3 id="nome"></h3>
-                </div>
-                <div class="campo">
-                    <h5>Preço</h5>
-                    <h4 id="preco"></h4>
-                </div>
-                <div class="campo">
-                    <h5>Quantidade</h5>
-                    <input type="number" id="quantidade">
-                </div>
-            </div>
-            <div class="pagamento">
-                <h4>Informe seu CEP</h4>
-                <h3>Total</h3>
-                <input type="text" placeholder="Ex: 14015-040">
-                <div id="total"></div>
-                <button>Procurar</button>
-                <button>Continuar</button>
-            </div>
+            <button onclick="limparCarrinho()">Limpar</button>
+            <table class="tabela-carrinho">
+                <thead>
+                    <tr class="header">
+                        <th>Item</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="nome-cell">
+                            <img src="images/latte.jpg" alt="">
+                            <p id="nome">Nome</p>
+                        </td>
+                        <td>
+                            <p id="preco">R$123</p>
+                        </td>
+                        <td>
+                            <input type="number" id="quantidade">
+                        </td>
+                        <td><button onclick="apagarItem()">X</button></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>
+                            <h4>Informe seu CEP</h4>
+                            <input type="text" id="procurar-cep">
+                            <button>Procurar</button>
+                        </td>
+                        <td colspan="3" align="right">
+                            <h3>Total</h3>
+                            <p id="total">R$ 123</p>
+                            <button>Continuar</button>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
         </section>
         <section class="cardapio">
-            <div class="pesquisa"></div>
+            <div class="input-wrapper">
+                <input type="text" id="pesquisa">
+                <img src="images/pesquisa.png" alt="">
+            </div>
+            
             <div class="item">
-                <div class="campo">
-                  <img src="" alt="">  
-                </div>
-                <div class="campo">
-                    <h3 id="nome"></h3>
-                    <p id="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus reiciendis numquam.</p>
-                </div>
-                <div class="campo">
-                    <h5>Preço</h5>
-                    <h4 id="preco"></h4>
+                <img src="images/latte.jpg" alt="">  
+                <div class="info">
+                    <h3 id="nome">Nome</h3>
+                    <p id="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus reiciendis numquam.</p>
+                    <h4 id="preco">R$123</h4>
+                    <button onclick="adicionarCarrinho">Adicionar ao carrinho</button>
                 </div>
             </div>
         </section>

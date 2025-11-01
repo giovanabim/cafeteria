@@ -1,0 +1,260 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    background-color: #faebd7;
+}
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 2em;
+}
+header {
+    background-color: #faebd7;
+    width: 100%;
+    padding: 0px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1030;
+    box-shadow: 0 0 20px #6e3806ad;
+}
+nav {
+    display: flex;
+    gap: 30px;
+}
+nav a {
+    color: #bf6028;
+    font-weight: 700;
+    text-decoration: none;
+}
+.marca {
+    display: flex;
+    align-items: center;
+}
+.marca img {
+    width: 50px;
+    height: 50px;
+}
+.intro {
+    min-height: 50vh;
+    padding: 40px 100px;
+    background: url(images/intro-background.jpg) no-repeat fixed;
+    background-position: left top;
+    background-size: cover;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.btn {
+    background-color: #cd9f5c;
+    color: black;
+    width: 120px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+
+    font-weight: 600;
+}
+.btn:hover {
+    background-color: #bf6028;
+}
+.diario {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+
+}
+.diario img {
+    height: 100%;
+    object-fit: contain;     
+    display: block;
+}
+.texto {
+    padding: 40px;
+}
+#title {
+    color: #bf6028;
+}
+.sobre {
+    background-color: #cd9f5c;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+.sobre img {
+    height: 100%;
+    object-fit: contain;     
+    display: block;
+}
+footer {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+/*Cardápio*/
+
+.carrinho {
+    margin-top: 62px;
+    margin-bottom: 40px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.carrinho button {
+    margin: 10px;
+    background-color: #cd9f5c;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+}
+.carrinho button:hover {
+    background-color: #bf6028;
+}
+#nome-cell {
+    display: flex;
+    border: none;
+    padding: 0;
+    gap: 30px;
+    align-items: center;
+}
+#nome-cell img {
+    height: 80px;
+}
+.tabela-carrinho {
+    background-color: white;
+    box-shadow: 0 0 20px #00000026;
+    border-collapse: collapse;
+    min-width: 80%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.tabela-carrinho thead tr {
+    background-color: #cd9f5c;
+    text-align: left;
+}
+.tabela-carrinho th, .tabela-carrinho td {
+    padding: 12px 15px;
+}
+.tabela-carrinho tbody tr {
+    border-bottom: 1px solid #bf6028;
+}
+.tabela-carrinho tfoot button {
+    margin: 5px;
+}
+.tabela-carrinho tfoot td{
+    padding: 20px 50px;
+}
+#quantidade {
+    width: 50px;
+}
+#procurar-cep {
+    padding: 9px 20px;
+    border: 1px black solid;
+    border-radius: 50px;
+}
+#total {
+    color: #bf6028;
+    font-weight: bold;
+}
+
+/* Cardapio */
+
+.cardapio {
+    padding: 20px;
+    height: 50vh;
+    background-color: #cd9f5c;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.input-wrapper {
+    background-color: white;
+    width: 40%;
+    height: 20px;
+    padding: 9px 20px;
+    border: 1px black solid;
+    border-radius: 50px;
+    display: flex;
+}
+.input-wrapper img {
+    height: 100%;
+}
+#pesquisa {
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    width: 100%;
+}
+#pesquisa:focus {
+    outline: none;
+}
+.item {
+    width: 100%;
+    height: 220px;
+    background-color: white;
+    display: flex;
+    box-shadow: 0 0 20px #00000026;
+    border-radius: 5px;
+}
+.item img {
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.item button {
+    margin: 10px;
+    background-color: #cd9f5c;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+}
+.item button:hover {
+    background-color: #bf6028;
+}
+.item h4 {
+    margin-top: 2px;
+    margin-bottom: 15px;
+}
+.info {
+    margin: 10px;
+}
+
+/*Contatos*/
+
+.galeria {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+.galeria img {
+    height: 100%;
+}
+.contatos {
+    height: 50vh;
+    background-color: #bf6028;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
